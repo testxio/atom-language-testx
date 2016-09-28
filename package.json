@@ -1,9 +1,13 @@
 {
   "name": "language-testx",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "Atom TestX language plugin.",
   "engines": {
     "atom": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/testxio/atom-language-testx.git"
   },
   "grammars": {
     "type": "array",
