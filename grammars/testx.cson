@@ -1,0 +1,13 @@
+'scopeName': 'source.testx'
+'name': 'TestX'
+'fileTypes': ['testx']
+'firstLineMatch': '^(#cloud-config|---)'
+'patterns': [
+  {
+    'match': '.*: *$'
+    'name': 'testx.step.name.keyword.control'
+  }
+  {
+    'include': 'source.yaml'
+  }
+]
