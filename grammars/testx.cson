@@ -4,7 +4,7 @@
 'firstLineMatch': '^(#cloud-config|---)'
 'patterns': [
   {
-    'match': '.*: *$'
+    'match': '-.*: *$'
     'name': 'testx.step.name.keyword.control'
   }
   {
