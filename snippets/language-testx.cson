@@ -113,3 +113,21 @@
       - sleep:
           ${1:seconds}: ${2:numberOfSecs}
     """
+  'Switch to window/frame':
+    'prefix': 'switch to'
+    'body': """
+      - switch to:
+          ${1:title}: ${2:windowTitle}
+    """
+  'Respond to dialog':
+    'prefix': 'respond to dialog'
+    'body': """
+      - respond to dialog:
+          respond: ${1:ok}
+    """
+  'Send keys':
+    'prefix': 'send keys'
+    'body': """
+      - send keys:
+          _ignored: ${1:keys}
+    """
