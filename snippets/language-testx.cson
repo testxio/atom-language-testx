@@ -2,132 +2,132 @@
   'Navigate to URL':
     'prefix': 'go to'
     'body': """
-      - go to:
+      go to:
           url: ${1:/}
     """
   'Go forward':
     'prefix': 'go forward'
-    'body': '- go forward\n'
+    'body': 'go forward\n'
   'Go back':
     'prefix': 'go back'
-    'body': '- go back\n'
+    'body': 'go back\n'
   'Refresh current page':
     'prefix': 'refresh page'
-    'body': '- refresh page\n'
+    'body': 'refresh page\n'
   'Clear local storage':
     'prefix': 'clear local storage'
-    'body': '- clear local storage\n'
+    'body': 'clear local storage\n'
   'Delete all cookies':
     'prefix': 'delete cookies'
-    'body': '- delete cookies\n'
+    'body': 'delete cookies\n'
   'Ignore AngularJS synchronization':
     'prefix': 'ignore synchronization'
     'body': """
-      - ignore synchronization:
+      ignore synchronization:
           ignore: '${1:true}'
     """
   'Set (act on) page elements':
     'prefix': 'set'
     'body': """
-      - set:
+      set:
           ${1:objectRef}: ${2:value}
     """
   'Store in context':
     'prefix': 'save'
     'body': """
-      - save:
+      save:
           ${1:objectRef}: ${2:varName}
     """
   'Put to context':
     'prefix': 'put'
     'body': """
-      - put:
+      put:
           ${1:varName}: ${2:value}
     """
   'Run script':
     'prefix': 'run'
     'body': """
-      - run:
+      run:
           ${1:file}: ${2:filePath}
           ${3:sheet}: ${4:sheetName}
     """
   'Assert existence':
     'prefix': 'check exists'
     'body': """
-      - check exists:
+      check exists:
           ${1:objRef}: '${1:true}'
     """
   'Assert enabled':
     'prefix': 'check enabled'
     'body': """
-      - check enabled:
+      check enabled:
           ${1:objRef}: '${1:true}'
     """
   'Assert read only':
     'prefix': 'check readonly'
     'body': """
-      - check readonly:
+      check readonly:
           ${1:objRef}: '${1:true}'
     """
   'Assert equality':
     'prefix': 'check equals'
     'body': """
-      - check equals:
+      check equals:
           ${1:objRef}: ${2:expectedValue}
     """
   'Assert unequality':
     'prefix': 'check not equals'
     'body': """
-      - check not equals:
+      check not equals:
           ${1:objRef}: ${2:expectedValue}
     """
   'Assert RegEx match':
     'prefix': 'check matches'
     'body': """
-      - check matches:
+      check matches:
           ${1:objRef}: ${2:regex}
     """
   'Assert RegEx does not match':
     'prefix': 'check not matches'
     'body': """
-      - check not matches:
+      check not matches:
           ${1:objRef}: ${2:regex}
     """
   'Wait for element(s) to appear':
     'prefix': 'wait to appear'
     'body': """
-      - wait to appear:
+      wait to appear:
           ${1:element1}: ${2:objRef}
           timeout: ${3:milliseconds}
     """
   'Wait for element(s) to disappear':
     'prefix': 'wait to disappear'
     'body': """
-      - wait to disappear:
+      wait to disappear:
           ${1:element1}: ${2:objRef}
           timeout: ${3:milliseconds}
     """
   'Pause the script':
     'prefix': 'sleep'
     'body': """
-      - sleep:
+      sleep:
           ${1:seconds}: ${2:numberOfSecs}
     """
   'Switch to window/frame':
     'prefix': 'switch to'
     'body': """
-      - switch to:
+      switch to:
           ${1:title}: ${2:windowTitle}
     """
   'Respond to dialog':
     'prefix': 'respond to dialog'
     'body': """
-      - respond to dialog:
+      respond to dialog:
           respond: ${1:ok}
     """
   'Send keys':
     'prefix': 'send keys'
     'body': """
-      - send keys:
+      send keys:
           _ignored: ${1:keys}
     """
